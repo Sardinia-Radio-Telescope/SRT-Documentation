@@ -118,7 +118,7 @@ Below is a brief description of each receiver available for this Call for Propos
 
 Receivers in the Commissioning Phase and available in the next future
 -------------------------------------------------------
-The receivers in the Commissioning Phase and available in the next future are summarized in the following table, indicating the receiver name, frequency band, number of beams, type of polarization (linear or circular), focal position, system temperature (estimated), beam size (estimated), maximum gain (estimated), and available backends. Each receiver will be available in both single-dish and VLBI modes.
+The receivers in the Commissioning Phase and available in the next future are summarized in the following table, indicating the receiver name, frequency band, number of beams, type of polarization (linear or circular), focal position, system temperature (estimated), beam size (estimated), maximum gain (estimated), and available backends. 
 
 
 ====================== ================================ ============ =================== =============== =================================== ==================== =================== ==================================
