@@ -120,15 +120,16 @@ Receivers in the Commissioning Phase and available in the next future
 -------------------------------------------------------
 The receivers in the Commissioning Phase and available in the next future are summarized in the following table, indicating the receiver name, frequency band, number of beams, type of polarization (linear or circular), focal position, system temperature (estimated), beam size (estimated), maximum gain (estimated), and available backends. Each receiver will be available in both single-dish and VLBI modes.
 
-====================== =========================== ============ ===================  =============== ======================= ================= =================== =============================================== 
-Receiver               Frequency [GHz]             Beams x Pol. Pol. type            Focal Position  Tsys @ El=90° [K]       Beamsize [arcmin] Gain [k/Jy]         Available backends
-====================== =========================== ============ ===================  =============== ======================= ================= =================== =============================================== 
-L-P band               0.25-0.46(P); 1.3-1.8(L)    1 x 2        linear and circular  primary         50-80(P) and 25-35(L)   48(P) and 11.4(L) 0.52(P) and 0.55(L)  DFB,DBBC, SARDARA, SKARAB
-Tri-band (K, Q and W)  18-26(K);34-50(Q);80-116(W) 1 x 2        LHCP/RHCP            Gregorian       -                       -                                      SARDARA, SKARAB
-Q-band                 33-50                       19 x 2       LHCP/RHCP            Gregorian       -                       -                                      SARDARA (7 feed), SKARAB
-Caruso (W-band)        70-116                      16 x 2       linear               Gregorian       -                       -                                      SARDARA (7 feed), SKARAB
-MISTRAL                77-103                      408          -                    Gregorian       -                       -                                      Dedicated Roach 2 backend
-====================== =========================== ============ ===================  =============== ======================= ================= =================== ===============================================
+
+====================== ================================ ============ =================== =============== =================================== ==================== =================== ==================================
+Receiver               Frequency [GHz]                  Beams x Pol. Pol. type           Focal Position  Tsys @ El=90° [K]                   Beamsize [arcmin]    Gain [k/Jy]         Available backends
+====================== ================================ ============ =================== =============== =================================== ==================== =================== ==================================
+L-P band               0.25-0.46 (P); 1.3-1.8 (L)       1 x 2        linear/circular     primary         50-80 (P); 25-35 (L)                48 (P); 11.4 (L)     0.52 (P); 0.55 (L)  DFB, DBBC, SARDARA, SKARAB
+Tri-band (K, Q, W)     18-26 (K); 34-50 (Q); 80-116 (W) 1 x 2        LHCP/RHCP           Gregorian       80-110 (K); 83-141 (Q); 166-252 (W) 1(K);0.57(Q);0.22(W) -                   SARDARA, SKARAB
+Q-band                 33-50                            19 x 2       LHCP/RHCP           Gregorian       50-120                              0.57                 -                   SARDARA (7 feeds), SKARAB
+Caruso (W-band)        70-116                           16 x 2       linear              Gregorian       80                                  0.22                 -                   SARDARA (7 feeds), SKARAB
+MISTRAL                77-103                           408          -                   Gregorian       -                                   -                    -                   Dedicated Roach 2 backend
+====================== ================================ ============ =================== =============== =================================== ==================== =================== ==================================
 
 * **L-P band receiver**: it is a single-feed, dual-frequency receiver installed at the primary focus of the telescope, and therefore requires the parabolic configuration. It allows for simultaneous observations at L and P bands. The polarization type is linear but is also transformed to circular (LHCP and RHCP) thanks to a hybrid converter. Unfortunately, this receiver operates in a frequency range that is heavily affected by the presence of RFI from both the surrounding area and self-produced by the telescope's electronic components. The RFI level needs to be minimized. A Gregorian cover, which limits self-produced RFI at L and P bands, is always set during observation. In orther to mitigate the presence of RFI, different radio frequency filters are available for the LP-band receiver. More details on the most up-to-date frequency bands of these filters are given in the following paper: `Schirru et. al, Universe (2023), vol. 9(9), 390; <https://doi.org/10.3390/universe9090390>`_.
 
@@ -431,20 +432,17 @@ Beam shape
 In the following tables, the second lobe and third lobe percentages correspond to the contribution of the counts in that lobe as compared to the
 central beam. 
 
-* **C-low receiver**
+* **C-low receiver**: values obtained on 3C84 at 4.8 GHz on 15 January 2025.
 
 ===================== =============== ==============
 Elevation range (deg) Second lobe (%) Third lobe (%)
 ===================== =============== ==============
-15-25                                
-25-35                  
-35-50                  
-50-65                  
-65-75                  
-75-85                  
+23-40                 2.2             0.46  
+40-60                 1.8             0.47 
+60-80                 1.7             0.45
 ===================== =============== ==============
 
-* **C-high or M-band receiver**
+* **C-high or M-band receiver**: valid since 2018 and reported in `SRT Performance Measurements <http://hdl.handle.net/20.500.12386/32536>`_.
 
 ===================== =============== ==============
 Elevation range (deg) Second lobe (%) Third lobe (%)
@@ -457,7 +455,7 @@ Elevation range (deg) Second lobe (%) Third lobe (%)
 75-85                 2.0             0.40
 ===================== =============== ==============
 
-* **K-band receiver**
+* **K-band receiver**: valid since 2018 and reported in `SRT Performance Measurements <http://hdl.handle.net/20.500.12386/32536>`_.
 
 ===================== =============== ==============
 Elevation range (deg) Second lobe (%) Third lobe (%)
@@ -471,7 +469,7 @@ Elevation range (deg) Second lobe (%) Third lobe (%)
 List of calibrators
 -------------------
 
-Here is a list of useful calibrators for various types of calibration:
+Here is a list of useful calibrators for various types of calibration (`Perley et. al, The Astrophysical Journal Supplement Series, Volume 230, Issue 1, article id. 7, 18 pp. (2017) <https://doi.org/10.3847/1538-4365/aa6df9>`_):
 
 ========== =================== =========================
 Flux       Polarization angle  Instrumental polarization
