@@ -157,8 +157,8 @@ Backend         Receivers  Effective Bandwidth (MHz)                            
 **SARDARA**        L-P     1000 (L) - 500 (P)                                         down to 5ms       1024 or 16384       spectro-polarimeter(*)    
 **DFB3**         all       256,512,1024                                               100 microsec      8192, pulsars: 2048  online pulsar folding + pulsar/transient search 
 **DBBC**        all        512                                                        -                -                     VLBI 
-**SKARAB**      all        1400                                                       down to 1 ms    32768                 spectro-polarimeter 
-**SKARAB**      all        187.5,160,128,93.75,80,64,46.875,40,32,23.4375,20,16       down to 1 ms    65536                 spectro-polarimeter
+**SKARAB**      all        1400, 1280                                                 down to 1 ms    32768                 spectro-polarimeter 
+**SKARAB**      all        187.5,160,128,93.75,80,64,46.875,40,32,23.4375,20,16       down to 1 ms    32768                 spectro-polarimeter
 =============== ========== ========================================================== =============== ===================== ====================================================================== 
 
 For the Total Power and SARDARA, the backend configuration with DISCOS (more detail at the link `Observing with SRT <https://srt-procedures.readthedocs.io/en/latest/index.html>`_) has different bandwidths from effective ones. For SARDARA, note that the actual available effective bandwidth of 1200 MHz corresponds to 1500 MHz in the backend setting. Similarly, for the effective bandwidth of 300 MHz, a bandwitdh of 420 MHz in the backend configuration is necessary. In the case of the Total Power, the four effective bandwidths correspond to 300, 730, 1250 or 2000 MHz, respectively. 
@@ -245,7 +245,25 @@ SKARAB
 **SKARAB is offered in shared-risk mode in all of its configurations.**
 *The use of this backend is admitted in shared-risk mode. Users are required to contact the antenna staff prior to submission, in order to assess the availability of software/hardware services for their specific needs.*
 
-SKARAB backend is composed of ten fully-reconfigurable SKARAB (aka Roach 3) boards that allow it to perform wide-band spectro-polarimetric observations, as well as high-time resolution for pulsars and fast transients (not currently available). Its sampling time can be set from 1ms to 1 s. For pulsar applications, the sampling time can be set up to 16 microsec for pulsars search. Baseband recording is going to be available from 16 to 512 MHz. The full description of the SKARAB board is reported in `Melis et al.,  Journal of Astronomical Instrumentation, Vol. 13, 2450008 (2024) <https://www.worldscientific.com/doi/full/10.1142/S2251171724500089?srsltid=AfmBOopnWjd6olCUgtwWLE6MsVDWdBXZKRj9yycO6KIzi4ITdUGQovur>`_.
+SKARAB backend is composed of ten fully-reconfigurable SKARAB (aka Roach 3) boards that allow it to perform wide-band spectro-polarimetric observations, as well as high-time resolution for pulsars and fast transients (not currently available). Its sampling time can be set from 1ms to 1 s. For pulsar applications, the sampling time can be set up to 16 microsec for pulsars search. Baseband recording is going to be available from 16 to 512 MHz. 
+Available configurations consist of:
+
+* 1400 MHz        bandwidth with 2048 or 32768  Full-Stokes mode channels 
+* 1280 MHz        bandwidth with 2048 or 32768  Full-Stokes mode channels
+* 187.5 MHz       tunable bandwidth with 32768  Full-Stokes mode channels
+* 160 MHz          tunable bandwidth with 32768  Full-Stokes mode channels
+* 128 MHz          tunable bandwidth with 32768  Full-Stokes mode channels
+* 93.75 MHz       tunable bandwidth with 32768  Full-Stokes mode channels
+* 80 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
+* 64 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
+* 46.875 MHz     tunable bandwidth with 32768  Full-Stokes mode channels
+* 40 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
+* 32 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
+* 23.4375 MHz   tunable bandwidth with 32768  Full-Stokes mode channels
+* 20 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
+* 16 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
+
+The full description of the SKARAB board is reported in `Melis et al.,  Journal of Astronomical Instrumentation, Vol. 13, 2450008 (2024) <https://www.worldscientific.com/doi/full/10.1142/S2251171724500089?srsltid=AfmBOopnWjd6olCUgtwWLE6MsVDWdBXZKRj9yycO6KIzi4ITdUGQovur>`_.
 
 
 Calibration
