@@ -246,6 +246,7 @@ SKARAB
 *The use of this backend is admitted in shared-risk mode. Users are required to contact the antenna staff prior to submission, in order to assess the availability of software/hardware services for their specific needs.*
 
 SKARAB backend is composed of ten fully-reconfigurable SKARAB (aka Roach 3) boards that allow it to perform wide-band spectro-polarimetric observations, as well as high-time resolution for pulsars and fast transients (not currently available). Its sampling time can be set from 1ms to 1 s.  
+
 Available configurations consist of:
 
 * 1400 MHz        bandwidth with 2048 or 32768  Full-Stokes mode channels 
@@ -264,6 +265,7 @@ Available configurations consist of:
 * 16 MHz            tunable bandwidth with 32768  Full-Stokes mode channels
 
 For pulsar applications, the sampling time can be set up to 16 microsec for pulsars search. Baseband recording is going to be available from 16 to 512 MHz. 
+
 The full description of the SKARAB board is reported in `Melis et al.,  Journal of Astronomical Instrumentation, Vol. 13, 2450008 (2024) <https://www.worldscientific.com/doi/full/10.1142/S2251171724500089?srsltid=AfmBOopnWjd6olCUgtwWLE6MsVDWdBXZKRj9yycO6KIzi4ITdUGQovur>`_.
 
 
