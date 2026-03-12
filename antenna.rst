@@ -288,7 +288,7 @@ Gain curve calibration
 
 From the measured gain curves (Gain vs. Elevation pointing), one fits a 2-degree polynomial with the parameters $C_0$, $C_1$ and $C_2$ is considered:
 
-$Gain (K/Jy) = C_2*El^2 + C_1*El + C_0$
+Gain (K/Jy) = C\:sub:2*El\:sup:2 + C_\:sub:1*El + C\:sub:_0
 
 for each receiver available for the current Call for Proposals, a summary of these optimal values are reported in the following.
 
